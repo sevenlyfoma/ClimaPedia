@@ -1,0 +1,44 @@
+{
+  "entries": [{
+    "label": "UAE",
+    "id": "0",
+    "range": ["2003-02-01", "2014-06-23"],
+    "subentries": [],
+    "defaultColour": "yellow"
+  },
+  {
+    "label": "Norway",
+    "id": "1",
+    "range": ["2014-06-24", "2021-09-02"],
+    "subentries": [
+      {
+        "label": "Move to Lysaker",
+        "id": "2",
+        "point": "2014-06-24",
+        "defaultColour": "red"
+      },
+      {
+        "label": "Move to Jar",
+        "id": "3",
+        "point": "2014-08-20",
+        "defaultColour": "black"
+      },
+      {
+        "label": "Move to Hovik",
+        "id": "4",
+        "point": "2017-03-01",
+        "defaultColour": "brown"
+      }
+    ],
+    "defaultColour": "white"
+  },
+  {
+    "label": "UK",
+    "id": "5",
+    "range": ["2021-09-03", "2023-03-13"],
+    "subentries": [],
+    "defaultColour": "blue"
+  }],
+  "range": ["2002-12-10", "2023-03-13"],
+  "clickable": false
+}

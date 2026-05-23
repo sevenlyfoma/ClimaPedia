@@ -1,0 +1,27 @@
+version: 3.9
+
+services:
+  db:
+    image: mysql
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - 3307:3306
+    env_file:
+      - .env
+    command: --local-infile=1
+  migrator:
+    build: ./db
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - weather-cache:/rawdata
+      - ./results:/results
+
+volumes:
+  weather-cache:
+  db_data:

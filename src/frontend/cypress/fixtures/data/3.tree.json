@@ -1,0 +1,20 @@
+{
+  "coords": [
+    [40, 20],
+    [50, -5]
+  ],
+  "series": [0, 1],
+  "seriesLegend": [
+    {
+      "name": "series 1",
+      "colour": "red",
+      "shape": "star"
+    },
+    {
+      "name": "series 2",
+      "colour": "green",
+      "shape": "star10"
+    }
+  ],
+  "ids": ["1", "2"]
+}

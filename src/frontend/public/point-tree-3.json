@@ -1,0 +1,23 @@
+{
+  "coords": [
+    [40, -75],
+    [35, -100],
+    [34, -80]
+  ],
+  "series": [0, 1, 1],
+  "seriesLegend": [
+    {
+      "name": "One series",
+      "colour": "#f00"
+    },
+    {
+      "name": "Another series",
+      "colour": "#0f0"
+    }
+  ],
+  "ids": ["6", "7", "8"],
+  "sizes": [5, 6, 7],
+  "sizeRange": [0, 10],
+  "labels": ["New Orleans", "New York", "Washington"],
+  "labelsOnHover": true
+}

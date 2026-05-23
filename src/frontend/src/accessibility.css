@@ -1,0 +1,60 @@
+/* Colour-blindness Colour Mappings */
+
+body {
+  /* Replace with original colours, otherwise will be unset */
+  --replace-blue: blue;
+  --replace-red: red;
+  --replace-green: green;
+
+  --replace-cyan: cyan;
+  --replace-magenta: magenta;
+  --replace-yellow: yellow;
+
+  --replace-orange: orange;
+
+  --replace-black: black;
+  --replace-white: white;
+}
+
+/* No colours (greyscale) */
+[data-colour-view="achromatopsia"] {
+  --replace-red: #111;
+  --replace-magenta: #333;
+  --replace-blue: #555;
+  --replace-cyan: #777;
+  --replace-green: #999;
+  --replace-yellow: #bbb;
+  --replace-orange: #ddd;
+}
+
+/* No red-green, shift all colours to one side of the purple-yellow axis */
+[data-colour-view="redgreen"] {
+  --replace-orange: orange;
+  --replace-red: red;
+  --replace-magenta: #e42d88;
+  --replace-yellow: #c08a43;
+  --replace-blue: #9420c2;
+  --replace-cyan: cyan;
+  --replace-green: #d6af7b;
+}
+
+/* Colours are already rather distinct, simply shift magenta down some amount */
+[data-colour-view="tritanopia"] {
+  --replace-magenta: #9420c2;
+}
+
+/* OpenDyslexic Font Settings */
+
+@font-face {
+  font-family: "od-regular";
+  src: url(/OpenDyslexic2/OpenDyslexic-Regular.otf);
+}
+
+.dyslexic-font,
+.dyslexic-font :not(.material-symbols-outlined) {
+  font-family: "od-regular" !important;
+}
+
+:root.large-font {
+  font-size: 1.5rem !important;
+}

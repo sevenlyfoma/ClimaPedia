@@ -1,0 +1,152 @@
+{
+    "group51": {
+        "name": "Group 51",
+        "views": {
+            "predict": {
+                "name": "Temperature Predictions",
+                "description": "Temperature predictions for Canada in 2016",
+                "focus": "map",
+                "type": "voronoi-heat",
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "actual": {
+                "name": "Actual Temperature",
+                "description": "Actual temperature for Canada in 2016",
+                "focus": "map",
+                "type": "voronoi-heat",
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "extreme_cold": {
+                "name": "Extreme Cold",
+                "description": "Prediction of extreme cold events in Ontario in 2016",
+                "focus": "map",
+                "type": "voronoi-heat",
+                "meta": {
+                    "dynamicMeta": true
+                }
+            }
+        }
+    },
+    "group52": {
+        "name": "Group 52",
+        "views": {
+            "reports": {
+                "name": "Weather Station Reports",
+                "description": "Visualisation of weather stations through time. Clicking on a station reveals the weather report closest to the selected time point.",
+                "focus": "map",
+                "type": "points",
+                "version": 0.1,
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "temperature": {
+                "name": "Temperature Heatmap",
+                "description": "Visualisation of average monthly temperature through time.",
+                "focus": "map",
+                "type": "voronoi-heat",
+                "version": 0.1,
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "precipitation": {
+                "name": "Precipitation Heatmap",
+                "description": "Visualisation of total monthly precipitation through time.",
+                "focus": "map",
+                "type": "voronoi-heat",
+                "version": 0.1,
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "extreme-events": {
+                "name": "Extreme Weather Phenomena",
+                "description": "Visualisation of extreme weather phenomena through time.",
+                "focus": "map",
+                "type": "points",
+                "version": 0.1,
+                "meta": {
+                    "dynamicMeta": true
+                }
+            }
+        }
+    },
+    "group54": {
+        "name": "Group 54",
+        "views": {
+            "universitiesTimeTree": {
+                "name": "Institutions of Atmospheric Scientists",
+                "description": "Map time-filtered tree visualisation showing how atmospheric scientists clustered at places of higher education.",
+                "focus": "map",
+                "type": "point-tree",
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "peopleTimePoints": {
+                "name": "Atmospheric Scientists",
+                "description": "Map showing the locations of atmospheric scientists.",
+                "focus": "map",
+                "type": "points",
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "genderedTimePoints": {
+                "name": "Gender/Sex of Atmospheric Scientists",
+                "description": "Map showing the sex or gender of atmospheric scientists.",
+                "focus": "map",
+                "type": "points",
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "polygonHeatTimePeople": {
+                "name": "Voronoi Heatmap of Scientists",
+                "description": "Voronoi heatmap showing polygons of atmospheric scientists",
+                "focus": "map",
+                "type": "voronoi-heat",
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "satelliteLaunches": {
+                "name": "Weather Satellite Launches",
+                "description": "Map points of where weather satellites were launched",
+                "focus": "map",
+                "type": "points",
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "satelliteTimelines": {
+                "name": "Weather Satellite Timeline",
+                "description": "Timeline of satellite lifetimes",
+                "focus": "timeline",
+                "type": "layeredTimeline",
+                "meta": {
+                    "dynamicMeta": true
+                }
+            },
+            "peoplePerInstitutionChart": {
+                "name": "Atmospheric Scientists per Institution",
+                "description": "This chart groups the amount of atmospheric scientists by institution, showing the most frequent ones",
+                "focus": "chart",
+                "type": "pie",
+                "meta": {}
+            },
+            "peopleOverTimeLineChart": {
+                "name": "Atmospheric Scientists Over Time",
+                "description": "This chart shows the amount of atmospheric scientists over time.",
+                "focus": "chart",
+                "type": "line",
+                "meta": {}
+            }
+        }
+    }
+}

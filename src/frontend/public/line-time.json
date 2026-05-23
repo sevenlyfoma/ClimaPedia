@@ -1,0 +1,38 @@
+{
+  "lines": [
+    [
+      ["2023-10-04", 0],
+      ["2023-10-05", 1],
+      ["2023-10-06", 3],
+      ["2023-10-07", 4]
+    ],
+    [
+      ["2023-10-04", 2],
+      ["2023-10-05", 4],
+      ["2023-10-06", 5],
+      ["2023-10-07", 3],
+      ["2023-10-08", 1]
+    ]
+  ],
+  "ids": ["1", "2"],
+  "labels": ["Red", "Blue"],
+  "clickable": false,
+  "isLogarithmic": false,
+  "styles": [
+    {
+      "colour": "blue",
+      "line": "solid",
+      "width": 3,
+      "showMarkers": true,
+      "shape": "vhv"
+    },
+    {
+      "colour": "green",
+      "line": "dash",
+      "width": 2
+    }
+  ],
+  "xAxis": {
+    "title": "Time (s)"
+  }
+}

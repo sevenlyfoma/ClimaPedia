@@ -1,0 +1,15 @@
+{
+  "coords": [[45, 10]],
+  "series": [1],
+  "seriesLegend": [
+    {
+      "name": "series 1",
+      "colour": "red"
+    },
+    {
+      "name": "series 2",
+      "colour": "green"
+    }
+  ],
+  "ids": ["5"]
+}

@@ -1,0 +1,137 @@
+#title {
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  left: 50%;
+  transform: translate(0, -50%);
+  color: #444;
+}
+#map {
+  flex-grow: 1;
+  width: 100vw;
+}
+#chart {
+  width: 100vw;
+}
+#legendBox {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+  bottom: 0;
+  width: 400px;
+  text-align: left;
+}
+#checkbox {
+  position: relative;
+  float: right;
+  width: 30px;
+  top: 20px;
+}
+#legendBox {
+  width: fit-content;
+  right: 0;
+  background-color: transparent;
+  left: 0;
+}
+button.overlay-title {
+  position: relative;
+  float: left;
+  background-color: #fff;
+  color: black;
+  width: fit-content;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  --bs-btn-active-color: black;
+  --bs-btn-active-bg: #eee;
+  --bs-btn-active-border-color: rgba(0, 0, 255, 0.2);
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: #eee;
+  --bs-btn-hover-border-color: rgba(0, 0, 0, 0.2);
+}
+div.dropdownMenu {
+  position: grid;
+  max-width: 500px;
+  height: fit-content;
+  background-color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+}
+.dropdownItem {
+  background-color: #eee;
+  color: #000 !important;
+  --bs-dropdown-link-active-color: black;
+  --bs-dropdown-link-active-bg: #ddd;
+}
+.dropdownItem.dropdown-toggled {
+  background-color: #ccc;
+  color: black;
+  --bs-dropdown-link-hover-color: black;
+  --bs-dropdown-link-hover-bg: #bbb;
+  --bs-dropdown-link-active-color: black;
+  --bs-dropdown-link-active-bg: #aaa;
+}
+
+.inactive-series {
+  filter: brightness(50%);
+}
+
+.click {
+  cursor: pointer;
+}
+
+.no-click {
+  cursor: inherit;
+}
+
+/* Override default styles */
+#legendBox .dropdown-toggle::after {
+  display: none !important;
+}
+
+#map .marker-cluster div {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1rem;
+  vertical-align: middle;
+  line-height: 40px;
+  background-color: white;
+  transition:
+    transform 200ms ease,
+    opacity 200ms ease;
+}
+
+#map .marker-cluster div:hover {
+  transform: scale(120%);
+  opacity: 0.5;
+}
+
+#map .marker-cluster div:active {
+  background-color: #eee;
+}
+
+#map .marker-cluster-small {
+  background-color: unset;
+}
+#map .marker-cluster-small div {
+  border: 2px var(--replace-green) solid;
+}
+
+#map .marker-cluster-medium {
+  background-color: unset;
+}
+#map .marker-cluster-medium div {
+  border: 2px var(--replace-orange, #ffa500) solid;
+}
+
+#map .marker-cluster-large {
+  background-color: unset;
+}
+#map .marker-cluster-large div {
+  border: 2px var(--replace-red) solid;
+}

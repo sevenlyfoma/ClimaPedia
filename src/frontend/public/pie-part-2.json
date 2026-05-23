@@ -1,0 +1,7 @@
+{
+  "widget": {
+    "title": "Third!",
+    "markup": "<html><body><h2>Hi!</h2><p>This is some more filler text</p></body></html>",
+    "size": 1
+  }
+}

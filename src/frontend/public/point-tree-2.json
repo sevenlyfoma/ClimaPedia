@@ -1,0 +1,18 @@
+{
+  "coords": [
+    [45, -95],
+    [50, -110]
+  ],
+  "series": [0, 1],
+  "seriesLegend": [
+    {
+      "name": "One series",
+      "colour": "#f00"
+    },
+    {
+      "name": "Another series",
+      "colour": "#0f0"
+    }
+  ],
+  "ids": ["3", "4"]
+}

@@ -1,0 +1,13 @@
+weather_tables/
+non_history_data/
+nohup.out
+example_data/
+example_data_cleaned
+stations
+data_uploading/station_data
+data_uploading/history_data
+data_uploading/extreme_weather_data
+data_retrieval/test
+data_retrieval/stations_last_accessed_time.txt
+data_retrieval/test/new_inner
+data_uploading/date_data

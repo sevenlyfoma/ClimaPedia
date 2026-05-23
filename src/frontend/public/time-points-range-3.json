@@ -1,0 +1,10 @@
+{
+  "coords": [],
+  "valuesLegend": {
+    "valueRange": [-10, 10],
+    "colourRange": ["#ff0", "#f0f", "#0ff"],
+    "unit": "mm",
+    "ticks": 5
+  },
+  "clickable": true
+}

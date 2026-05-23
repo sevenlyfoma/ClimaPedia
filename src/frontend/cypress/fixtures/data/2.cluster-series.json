@@ -1,0 +1,30 @@
+{
+  "coords": [
+    [50, -10],
+    [51, -5],
+    [55, -1],
+    [46, 5],
+    [51, -10],
+    [51, -8],
+    [52, -4],
+    [49, 0],
+    [50, -4],
+    [50, -4]
+  ],
+  "series": [0, 0, 0, 1, 1, 2, 2, 2, 2, 2],
+  "seriesLegend": [
+    {
+      "name": "series 1",
+      "colour": "red"
+    },
+    {
+      "name": "series 2",
+      "colour": "blue"
+    },
+    {
+      "name": "series 3",
+      "colour": "green"
+    }
+  ],
+  "clustering": true
+}

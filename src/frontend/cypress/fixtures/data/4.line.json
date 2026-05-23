@@ -1,0 +1,38 @@
+{
+  "lines": [
+    [
+      [0, 0],
+      [1, 1],
+      [2, 3],
+      [3, 3]
+    ],
+    [
+      [5, 5],
+      [5, 4],
+      [4, 3],
+      [3, 3],
+      [0, 2]
+    ]
+  ],
+  "ids": ["1", "2"],
+  "labels": ["Red", "Blue"],
+  "clickable": false,
+  "isLogarithmic": false,
+  "styles": [
+    {
+      "colour": "red",
+      "line": "solid",
+      "width": 3,
+      "showMarkers": true,
+      "shape": "spline"
+    },
+    {
+      "colour": "blue",
+      "line": "dash",
+      "width": 2
+    }
+  ],
+  "xAxis": {
+    "title": "Dots (k)"
+  }
+}

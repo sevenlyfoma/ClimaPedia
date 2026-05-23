@@ -1,0 +1,19 @@
+`station` CHAR(20) NOT NULL,
+`measurement_date` DATE NOT NULL,
+PRIMARY KEY (`station`, `measurement_date`),
+-- Monthly Data
+`avg_high_temp` DOUBLE,
+`avg_low_temp` DOUBLE,
+`avg_temp` DOUBLE,
+`ext_high_temp` DOUBLE,
+`ext_low_temp` DOUBLE,
+`precip_total_rain` DOUBLE,
+`precip_total_snow` DOUBLE,
+`precip_total` DOUBLE,
+`snow_grnd_last_day` DOUBLE,
+`wind_dir_max_gust` DOUBLE,
+`wind_speed_max_gust` DOUBLE,
+CONSTRAINT `fk_station`
+    FOREIGN KEY (`station`) REFERENCES `station`(`station_id`)
+    ON DELETE CASCADE
+    ON UPDATE RESTRICT

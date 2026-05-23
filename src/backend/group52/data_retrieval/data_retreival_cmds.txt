@@ -1,0 +1,19 @@
+History data
+
+python -m data_retrieval.collect_history_data data_uploading/station_data/2.extracted_non_history_data.json data_uploading/history_data
+
+python -m data_retrieval.collect_history_data data_uploading/station_data/2.extracted_non_history_data.json data_retrieval/test/inner
+
+python -m data_retrieval.collect_history_data data_uploading/station_data/2.extracted_non_history_data.json data_retrieval/test/new_inner data_retrieval/test/stale_stations.txt
+
+
+
+Station data:
+
+python -m data_retrieval.collect_station_data data_uploading/station_data
+
+python -m data_retrieval.collect_station_data data_retrieval/test/x.json data_retrieval/stations_last_accessed_time.txt
+
+Change dates:
+
+python -m data_retrieval.collect_change_dates data_uploading/station_data/2.extracted_non_history_data.json data_retrieval/test/modify_times.txt data_retrieval/test/stale_stations.txt

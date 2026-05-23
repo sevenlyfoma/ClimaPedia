@@ -1,0 +1,28 @@
+{
+  "coords": [
+    [55, -15],
+    [53, -8],
+    [45, -1],
+    [39, 0],
+    [50, 10]
+  ],
+  "series": [0, 0, 1, 1, 2],
+  "seriesLegend": [
+    {
+      "name": "series 1",
+      "colour": "#f00"
+    },
+    {
+      "name": "series 2",
+      "colour": "#0f0"
+    },
+    {
+      "name": "series 3",
+      "colour": "#00f"
+    }
+  ],
+  "labels": ["a1", "a2", "a3", "a4", "a5"],
+  "labelsOnHover": true,
+  "sizes": [1, 2, 5, 8, 10],
+  "sizeRange": [1, 10]
+}

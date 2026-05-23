@@ -1,0 +1,15 @@
+{
+  "STATION_ID": { "cleaningFuncs": [], "cleaningArgs": [] },
+  "ELEVATION": { "cleaningFuncs": [], "cleaningArgs": [] },
+  "NAME": { "cleaningFuncs": [], "cleaningArgs": [] },
+  "LATITUDE": {
+    "cleaningFuncs": ["apply_string_mapping"],
+    "cleaningArgs": [["convert_to_float"]]
+  },
+  "LONGITUDE": {
+    "cleaningFuncs": ["apply_string_mapping"],
+    "cleaningArgs": [["convert_to_float"]]
+  },
+  "COUNTRY": { "cleaningFuncs": [], "cleaningArgs": [] },
+  "CAN_ID": { "cleaningFuncs": [], "cleaningArgs": [] }
+}

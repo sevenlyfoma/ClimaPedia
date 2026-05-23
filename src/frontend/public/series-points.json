@@ -1,0 +1,31 @@
+{
+  "coords": [
+    [0, 0],
+    [1, 1],
+    [5, 5],
+    [9, 9],
+    [10, 10]
+  ],
+  "series": [0, 0, 1, 1, 2],
+  "seriesLegend": [
+    {
+      "name": "One series",
+      "colour": "red",
+      "shape": "circle"
+    },
+    {
+      "name": "Another series",
+      "colour": "green",
+      "shape": "square"
+    },
+    {
+      "name": "Last series",
+      "colour": "blue",
+      "shape": "star10"
+    }
+  ],
+  "labels": ["a", "b", "c", "long", "eeeeee"],
+  "labelsOnHover": false,
+  "sizes": [1, 2, 8, 8, 10],
+  "sizeRange": [1, 10]
+}

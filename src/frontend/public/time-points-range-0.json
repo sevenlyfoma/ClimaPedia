@@ -1,0 +1,18 @@
+{
+  "coords": [
+    [-51, 20],
+    [-42, 31],
+    [-54, 25],
+    [-49, 29],
+    [-30, 20]
+  ],
+  "ids": [0, 1, 2, 3, 4],
+  "values": [-10, -9, 0, 5, 10],
+  "valuesLegend": {
+    "valueRange": [-10, 10],
+    "colourRange": ["#ff0", "#f0f", "#0ff"],
+    "unit": "mm",
+    "ticks": 5
+  },
+  "clickable": true
+}

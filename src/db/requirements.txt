@@ -1,0 +1,7 @@
+cryptography==42.*
+numpy==1.26.*
+pandas==2.2.*
+pymysql==1.*
+requests==2.31.*
+scikit-learn==1.4.0
+sparqlwrapper==2.*

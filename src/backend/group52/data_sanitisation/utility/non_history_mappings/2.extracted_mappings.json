@@ -1,0 +1,34 @@
+{
+  "item_value": {
+    "cleaningFuncs": ["apply_string_mapping", "rename_column"],
+    "cleaningArgs": [["extract_q_code"], ["STATION_ID"]]
+  },
+  "altitude_value": {
+    "cleaningFuncs": ["rename_column"],
+    "cleaningArgs": [["ELEVATION"]]
+  },
+  "coord_value": {
+    "cleaningFuncs": [
+      "apply_string_mapping",
+      "split_into_columns",
+      "drop_column"
+    ],
+    "cleaningArgs": [
+      ["reformat_lat_and_long"],
+      [" ", "LONGITUDE", "LATITUDE"],
+      []
+    ]
+  },
+  "itemLabel_value": {
+    "cleaningFuncs": ["rename_column"],
+    "cleaningArgs": [["NAME"]]
+  },
+  "code_value": {
+    "cleaningFuncs": ["rename_column"],
+    "cleaningArgs": [["COUNTRY"]]
+  },
+  "station_id_value": {
+    "cleaningFuncs": ["apply_string_mapping", "rename_column"],
+    "cleaningArgs": [["reformat_station_id"], ["CAN_ID"]]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "coords":  [
+      [1, 2],
+      [1.5, 2],
+      [2, 3],
+      [3, 3]
+  ],
+  "ids": ["1", "2", "3", "4"],
+  "labels": ["Daniel", "Pres Lincoln", "Felix", "Ben"],
+  "clickable": false,
+  "xAxis": {
+    "title": "Coolness",
+    "type": "log"
+  },
+  "yAxis": {
+    "title": "Smartness",
+    "type": "linear"
+  },
+  "title": "The coolest people"
+}

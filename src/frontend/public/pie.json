@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "label": "first",
+      "id": "0",
+      "value": 1
+    },
+    {
+      "label": "second",
+      "id": "1",
+      "value": 2
+    },
+    {
+      "label": "third",
+      "id": "2",
+      "value": 3
+    }
+  ],
+  "clickable": true,
+  "hover": {
+    "showLabel": true,
+    "showPercent": true,
+    "showValue": true,
+    "unit": "ml"
+  }
+}

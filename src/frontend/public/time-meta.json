@@ -1,0 +1,13 @@
+{
+  "timeData": {
+    "times": ["2023-10-23", "2023-10-25", "2023-10-29"],
+    "period": {
+      "unit": "day",
+      "value": 1
+    },
+    "range": ["2023-05-01", "2023-12-31"],
+    "batchLoad": true,
+    "persistent": true,
+    "partRefetch": true
+  }
+}

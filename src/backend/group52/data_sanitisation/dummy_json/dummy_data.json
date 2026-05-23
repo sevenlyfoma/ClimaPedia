@@ -1,0 +1,11 @@
+[ 
+    {"location":"location1", "mean average temp":31, "mean average rainfall":40},
+    {"location":"location2", "average temp":30, "mean average rainfall":40},
+    {"location":"location3", "mean temp":30, "mean average rainfall":40},
+    {"location":"location4", "mean average temp":30, "average rainfall":40},
+    {"location":"location5", "mean average temp":30, "mean rainfall":40},
+    {"location":"location6", "mean temp":30, "mean rainfall":40},
+    {"location":"location7", "average temp":30, "average rainfall":40},
+    {"location":"location8", "average temp":30, "mean rainfall":40},
+    {"location":"location9", "mean temp":30, "average rainfall":40}
+]

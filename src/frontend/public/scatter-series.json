@@ -1,0 +1,28 @@
+{
+  "coords":  [
+      [10, 2],
+      [3, 6],
+      [2, 5],
+      [8, 1]
+  ],
+  "ids": ["1", "2", "3", "4"],
+  "labels": ["Pigs", "Dogs", "Cats", "cows"],
+  "series": [0, 1, 1, 0],
+  "seriesLegend": [{
+    "name": "Farm animals",
+    "colour": "red"
+  }, {
+    "name": "House animals",
+    "colour": "blue"
+  }],
+  "clickable": true,
+  "xAxis": {
+    "title": "Dirtiness",
+    "type": "linear"
+  },
+  "yAxis": {
+    "title": "cutness",
+    "type": "linear"
+  },
+  "title": "Animals"
+}

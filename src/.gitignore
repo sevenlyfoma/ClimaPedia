@@ -1,0 +1,13 @@
+.env
+.venv
+.vscode
+.DS_Store
+frontend/package-lock.json
+*.db
+*.tmp
+*.log
+backend/test.csv
+backend/group54/data/flush.tmp
+backend/group54/data/database.db
+results
+frontend/cypress/screenshots

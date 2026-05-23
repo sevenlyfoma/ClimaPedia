@@ -1,0 +1,12 @@
+python -m data_sanitisation.lib.clean_data_formatting data_sanitisation/utility/monthly_history_mappings/1.history_extractions_1.json example_data/Q61004259M.json example_data/1.Q61004259M.json
+
+
+python -m data_sanitisation.lib.clean_data_formatting data_sanitisation/utility/non_history_mappings/1.non_history_refinement_mappings.json example_data/stations.json example_data/1.stations.json
+
+
+1.
+python -m data_sanitisation.lib.extract_history_data example_data/Q61004259M.json example_data/1.Q61004259M.json
+
+2.
+
+python -m data_sanitisation.lib.clean_all_histories data_sanitisation/utility/monthly_history_mappings/monthly_reorderings.txt example_data/Uncleaned_Months example_data/Cleaned_Months

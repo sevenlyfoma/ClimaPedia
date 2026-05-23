@@ -1,0 +1,7 @@
+{
+  "widget": {
+    "title": "Khartoum",
+    "markup": "<html><body><h1>Hello!</h1><p>hello and <a href=\"/\">click me</a></p></body></html>",
+    "size": 1
+  }
+}

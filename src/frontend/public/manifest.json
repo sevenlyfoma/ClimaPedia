@@ -1,0 +1,140 @@
+{
+  "group51": {
+    "name": "Testing",
+    "views": {
+      "series": {
+        "name": "Series Points",
+        "description": "Showing points in series, with bubbles, and labels",
+        "focus": "map",
+        "type": "points"
+      },
+      "continuous": {
+        "name": "Continuous Points",
+        "description": "Showing continuous points with colour scale",
+        "focus": "map",
+        "type": "points"
+      },
+      "time-persistent": {
+        "name": "Persistent Time Data",
+        "description": "Persistent time data is shown, visualised through batch loading",
+        "focus": "map",
+        "type": "points",
+        "meta": {
+          "dynamicMeta": true
+        }
+      },
+      "time-no-persistent": {
+        "name": "Non-persistent Time Data",
+        "description": "Non-persistent time data is shown, fetching data for each range specified",
+        "focus": "map",
+        "type": "points",
+        "meta": {
+          "timeData": {
+            "times": ["2023-10-23", "2023-10-23", "2023-10-23", "2023-10-28"],
+            "period": {
+              "unit": "day",
+              "value": 1
+            },
+            "range": ["2023-05-01", "2023-12-31"],
+            "batchLoad": false,
+            "persistent": false,
+            "refetchPart": true
+          }
+        }
+      },
+      "timeline": {
+        "name": "Timeline",
+        "description": "Data visualised on a timeline",
+        "focus": "timeline",
+        "type": "layeredTimeline"
+
+      },
+      "point-heat": {
+        "name": "Point Heat",
+        "description": "Data visualised using the Point heat type",
+        "focus": "map",
+        "type": "point-heat",
+        "meta": {
+          "viewCountries": ["USA", "CAN", "FRA", "BRA"]
+        }
+      },
+      "voronoi-heat": {
+        "name": "Voronoi Heat",
+        "description": "Data visualised using the Voronoi heat type",
+        "focus": "map",
+        "type": "voronoi-heat",
+        "meta": {
+          "reloadForBounds": true
+        }
+      },
+      "invalid-type": {
+        "name": "Invalid map type",
+        "description": "Data visualised with an invalid map type",
+        "focus": "map",
+        "type": "bad-type",
+        "meta": {
+          "viewCountries": ["CAN"]
+        }
+      },
+      "pie": {
+        "name": "Pie Chart",
+        "description": "Data visualised with a pie chart",
+        "focus": "chart",
+        "type": "pie"
+      },
+      "line": {
+        "name": "Line Chart",
+        "description": "Data visualised with a line chart",
+        "focus": "chart",
+        "type": "line"
+      },
+      "scatter": {
+        "name": "Scatter Chart",
+        "description": "Data visualised with a scatter chart",
+        "focus": "chart",
+        "type": "scatter"
+      },
+      "scatter-series": {
+        "name": "Scatter Chart Series",
+        "description": "Data visualised with a scatter chart in series",
+        "focus": "chart",
+        "type": "scatter"
+      },
+      "scatter-continuous": {
+        "name": "Scatter Chart Continuous",
+        "description": "Data visualised with a scatter chart in continuous values",
+        "focus": "chart",
+        "type": "scatter"
+      },
+      "line-time": {
+        "name": "Line Chart with Time",
+        "description": "Data visualised with line chart using date axis",
+        "focus": "chart",
+        "type": "line"
+      },
+      "clustered": {
+        "name": "Clustered Points",
+        "description": "Data visualised with clustered points",
+        "focus": "map",
+        "type": "points"
+      },
+      "clustered-series": {
+        "name": "Clustered Series Points",
+        "description": "Data visualised with clustered points in series",
+        "focus": "map",
+        "type": "points"
+      }
+    }
+  },
+  "group52": {
+    "name": "Group 52",
+    "views": {
+      "point-tree": {
+        "name": "Point Tree",
+        "description": "Data visualised using the point tree type",
+        "focus": "map",
+        "type": "point-tree"
+      }
+    }
+  }
+}

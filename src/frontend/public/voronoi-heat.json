@@ -1,0 +1,32 @@
+{
+  "polygons": [
+    [
+      [50, 10],
+      [40, 14],
+      [45, 30]
+    ],
+    [
+      [50, 10],
+      [40, 14],
+      [35, -10]
+    ],
+    [
+      [50, 10],
+      [35, -10],
+      [40, -20],
+      [60, 0]
+    ]
+  ],
+  "ids": ["0", "1", "2"],
+  "values": [0, 10, 25],
+  "valuesLegend": {
+    "valueRange": [0, 30],
+    "colourRange": ["lime", "magenta"],
+    "unit": "K",
+    "ticks": 4
+  },
+  "heatStyle": {
+    "edgeColour": "#000"
+  },
+  "clickable": true
+}

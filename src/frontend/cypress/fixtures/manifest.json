@@ -1,0 +1,106 @@
+{
+  "1": {
+    "name": "Group 1",
+    "views": {
+      "series": {
+        "name": "series",
+        "description": "Cat Dog",
+        "focus": "map",
+        "type": "points"
+      },
+      "plain": {
+        "name": "plain",
+        "description": "Apple",
+        "focus": "map",
+        "type": "points"
+      },
+      "pie": {
+        "name": "pie",
+        "description": "Rope",
+        "focus": "chart",
+        "type": "pie"
+      }
+    }
+  },
+  "2": {
+    "name": "Group 2",
+    "views": {
+      "values": {
+        "name": "values",
+        "description": "Bear",
+        "focus": "map",
+        "type": "points"
+      },
+      "click": {
+        "name": "click",
+        "description": "Morning",
+        "focus": "map",
+        "type": "points"
+      },
+      "cluster": {
+        "name": "cluster",
+        "description": "Day",
+        "focus": "map",
+        "type": "points"
+      },
+      "cluster-series": {
+        "name": "cluster-series",
+        "description": "Day",
+        "focus": "map",
+        "type": "points"
+      }
+    }
+  },
+  "3": {
+    "name": "Group 3",
+    "views": {
+      "voronoi": {
+        "name": "voronoi",
+        "description": "Portrait",
+        "focus": "map",
+        "type": "voronoi-heat"
+      },
+      "heat": {
+        "name": "heat",
+        "description": "on",
+        "focus": "map",
+        "type": "point-heat"
+      },
+      "tree": {
+        "name": "tree",
+        "description": "fire",
+        "focus": "map",
+        "type": "point-tree"
+      }
+    }
+  },
+  "4": {
+    "name": "Group 4",
+    "views": {
+      "line": {
+        "name": "line",
+        "description": "water",
+        "focus": "chart",
+        "type": "line"
+      },
+      "scatter": {
+        "name": "scatter",
+        "description": "air",
+        "focus": "chart",
+        "type": "scatter"
+      },
+      "scatter-series": {
+        "name": "scater-series",
+        "description": "earth",
+        "focus": "chart",
+        "type": "scatter"
+      },
+      "scatter-values": {
+        "name": "scater-values",
+        "description": "harmony",
+        "focus": "chart",
+        "type": "scatter"
+      }
+    }
+  }
+}

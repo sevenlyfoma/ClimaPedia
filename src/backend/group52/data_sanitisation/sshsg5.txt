@@ -1,0 +1,57 @@
+ssh mv54@cs3099usersg5.teaching.cs.st-andrews.ac.uk
+sudo -u cs3099usersg5 bash -l
+cd
+cd dev/project-code/backend/group52
+python -i -m db_accessor.db_accessor
+
+x = create_connection_to_db()
+show_tables(x)
+
+
+ssh mv54@cs3099user52.teaching.cs.st-andrews.ac.uk
+sudo -u cs3099user52 bash -l
+
+"""CREATE TABLE weather_data (
+    ENTRY_ID INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    STATION CHAR(20) NOT NULL,
+    MEASUREMENT_DATE DATE NOT NULL,
+    -- Monthly Data
+    avg_high_temp DOUBLE,
+    avg_low_temp DOUBLE,
+    avg_temp DOUBLE,
+    ext_high_temp DOUBLE,
+    ext_low_temp DOUBLE,
+    precip_total_rain DOUBLE,
+    precip_total_snow DOUBLE,
+    precip_total DOUBLE,
+    snow_grnd_last_day DOUBLE,
+    wind_dir_max_gust DOUBLE,
+    wind_speed_max_gust DOUBLE,
+   
+    FOREIGN KEY (STATION) REFERENCES weather_station(STATION_ID)
+);
+"""
+
+run_query(x, 'ALTER TABLE weather_data RENAME TO HISTORY')
+
+
+accessor = DBAccessor()
+accessor.server_and_db_connect(db=Databases.DEV)
+len(accessor.get_all_stations())
+len(accessor.get_all_reports())
+
+accessor = DBAccessor()
+accessor.server_and_db_connect(db=Databases.PROD)
+len(accessor.get_all_stations())
+len(accessor.get_all_reports())
+accessor.exec_statement("DESCRIBE HISTORY")
+accessor.exec_statement("SELECT * FROM HISTORY LIMIT 10")
+
+
+Trying out cleaning funcs
+python -i -m group52.data_sanitisation.lib.cleaning_functions
+
+pytest group52/data_sanitisation
+pylint group52/data_sanitisation/test
+
+python -i -m group52.data_sanitisation.test.unit.test_reorder_columns

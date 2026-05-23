@@ -1,0 +1,37 @@
+# basic pipeline to check all code is linted properly
+image: python:latest
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+
+before_script:
+  - python --version ; pip --version
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+  - pip install pylint
+  - pip install black
+  - pip install flake8
+
+
+stages:
+  - linting
+
+black:
+  stage: linting
+  script:
+    - find . -type f -wholename "**/group52/*.py" | xargs python -m black
+
+flake8:
+  stage: linting
+  script:
+    - find . -type f -wholename "**/group52/*.py" | xargs python -m flake8 --max-line-length=150
+
+pylint:
+  stage: linting
+  script: 
+    - find . -type f -wholename "**/group52/*.py" | xargs python -m pylint --disable=E0401 --fail-under=9

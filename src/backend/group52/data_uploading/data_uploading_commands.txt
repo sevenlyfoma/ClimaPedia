@@ -1,0 +1,22 @@
+Histories
+
+python -m data_uploading.download_clean_upload_histories DEV
+python -m data_uploading.download_clean_upload_histories PROD
+
+Stations
+
+python -m group.data_uploading.download_clean_upload_stations DEV
+python -m data_uploading.download_clean_upload_stations PROD
+
+Daemon
+
+tmux
+python -m data_uploading.start_uploading_daemon DEV
+crtl b -> d
+learn more here: https://wiki.cs.st-andrews.ac.uk/index.php?title=Using_tmux
+
+
+Drop and create
+
+python -m data_uploading.drop_and_create_tables DEV
+python -m data_uploading.drop_and_create_tables PROD

@@ -1,0 +1,7 @@
+{
+  "widget": {
+    "title": "point 1",
+    "markup": "<h1>apple</h1><img src=\"https://www.st-andrews.ac.uk/assets/university/brand/logos/standard-vertical-black.png\" alt=\"st-andrews\" />",
+    "size": 1
+  }
+}

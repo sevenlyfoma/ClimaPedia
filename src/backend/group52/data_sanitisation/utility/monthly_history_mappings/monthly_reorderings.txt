@@ -1,0 +1,1 @@
+Station,date,avgHighTemp,avgLowTemp,avgTemp,extHighTemp,extLowTemp,precipTotalRain,precipTotalSnow,precipTotal,snowGrndLastDay,windDirMaxGust,windSpeedMaxGust

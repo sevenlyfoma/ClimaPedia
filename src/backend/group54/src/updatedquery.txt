@@ -1,0 +1,41 @@
+SELECT DISTINCT ?person ?personLabel ?loc ?locLabel ?coordPerson ?educationOrEmployment ?educationOrEmploymentLabel ?coordUni ?borndate ?deathdate
+WHERE {
+    {
+        SELECT DISTINCT ?person ?personLabel ?loc ?coordPerson ?educationOrEmployment ?coordUni (SAMPLE (?borndate) AS ?borndate) (SAMPLE(?deathdate) as ?deathdate)
+        WHERE {
+            ?person wdt:P106 wd:Q2310145;
+                    wdt:P569 ?borndate;
+                    OPTIONAL { ?person wdt:P570 ?deathdate }.
+            ?person ?locator ?loc.
+            ?person ?educatePred ?educationOrEmployment.
+            ?educationOrEmployment wdt:P31 [wdt:P279 ?educatedInst];
+                                    wdt:P625 ?coordUni.
+            ?loc wdt:P625 ?coordPerson.
+            
+            FILTER (?educatePred IN (wdt:P69, wdt:P108))
+            FILTER (?locator IN (wdt:P19))
+            FILTER (?educatedInst IN (wd:Q3918, wd:Q189004, wd:Q917182))
+            FILTER (datatype(?borndate) = xsd:dateTime) 
+        } GROUP BY ?person ?personLabel ?loc ?coordPerson ?coordUni ?educationOrEmployment
+    }
+    UNION
+    {
+        SELECT DISTINCT ?person ?personLabel ?loc ?coordPerson ?educationOrEmployment ?coordUni (SAMPLE (?borndate) AS ?borndate) (SAMPLE(?deathdate) as ?deathdate)
+        WHERE {
+            ?person wdt:P106 wd:Q2310145;
+                    wdt:P569 ?borndate;
+                    OPTIONAL { ?person wdt:P570 ?deathdate }.
+            ?person ?locator ?loc.
+            ?person ?educatePred ?educationOrEmployment.
+            ?educationOrEmployment wdt:P31 ?educatedInst;
+                                    wdt:P625 ?coordUni.
+            ?loc wdt:P625 ?coordPerson.
+    
+            FILTER (?educatePred IN (wdt:P69, wdt:P108))
+            FILTER (?locator IN (wdt:P19))
+            FILTER (?educatedInst IN (wd:Q3918, wd:Q189004, wd:Q917182))
+            FILTER (datatype(?borndate) = xsd:dateTime) 
+        } GROUP BY ?person ?personLabel ?loc ?coordPerson ?coordUni ?educationOrEmployment
+    }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}

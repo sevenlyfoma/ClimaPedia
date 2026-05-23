@@ -1,0 +1,33 @@
+version: 3.9
+
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - 8080:8080
+    env_file:
+      - .env
+    depends_on:
+      - db
+  db:
+    image: mysql
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    env_file:
+      - .env
+  migrator:
+    build: ./db
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - weather-cache:/rawdata
+      - ./results:/results
+
+volumes:
+  weather-cache:
+  db_data:

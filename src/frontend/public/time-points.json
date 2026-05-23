@@ -1,0 +1,50 @@
+{
+  "2023-10-23": {
+    "coords": [
+      [49, 38],
+      [45, 38],
+      [55, 50],
+      [32, 30]
+    ],
+    "values": [-10, -9, 0, 5],
+    "valuesLegend": {
+      "valueRange": [-10, 10],
+      "unit": "mm",
+      "ticks": 5,
+      "colourRange": ["#f00", "#00f"]
+    },
+    "clickable": true
+  },
+  "2023-10-25": {
+    "coords": [
+      [50, 41],
+      [51, 42],
+      [60, 50],
+      [40, 40]
+    ],
+    "values": [-10, -9, 0, 5],
+    "valuesLegend": {
+      "valueRange": [-10, 10],
+      "unit": "mm",
+      "ticks": 5,
+      "colourRange": ["#f00", "#00f"]
+    },
+    "clickable": true
+  },
+  "2023-10-29": {
+    "coords": [
+      [55, 40],
+      [52, 38],
+      [64, 54],
+      [44, 48]
+    ],
+    "values": [-10, -8, 0, 4],
+    "valuesLegend": {
+      "valueRange": [-10, 10],
+      "unit": "mm",
+      "ticks": 5,
+      "colourRange": ["#f00", "#00f"]
+    },
+    "clickable": true
+  }
+}

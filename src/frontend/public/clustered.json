@@ -1,0 +1,23 @@
+{
+  "coords": [
+    [11, 20],
+    [11, 21],
+    [12, 19],
+    [11.5, 25],
+    [19, 22],
+    [20, 20],
+    [19, 22],
+    [20, 21],
+    [19.5, 22],
+    [21, 20]
+  ],
+  "values": [-10, -9, 0, 5, 10, 5, 5, 4, 3, 2, 1],
+  "valuesLegend": {
+    "valueRange": [-10, 10],
+    "colourRange": ["black", "blue"],
+    "unit": "km",
+    "ticks": 6
+  },
+  "clickable": true,
+  "clustering": true
+}

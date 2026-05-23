@@ -1,0 +1,9 @@
+[
+    {"fieldname":"mean average temp",
+     "synonyms":["mean temp", "average temp"]
+    },
+    {"fieldname":"mean average rainfall",
+     "synonyms":["mean rainfall", "average rainfall"]
+    }
+
+]

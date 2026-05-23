@@ -1,0 +1,31 @@
+{
+  "item": {
+    "cleaningFuncs": ["extract_json_fields", "drop_column"],
+    "cleaningArgs": [["value"], []]
+  },
+  "altitude": {
+    "cleaningFuncs": ["extract_json_fields", "drop_column"],
+    "cleaningArgs": [["value"], []]
+  },
+  "country": { "cleaningFuncs": ["drop_column"], "cleaningArgs": [[]] },
+  "code": {
+    "cleaningFuncs": ["extract_json_fields", "drop_column"],
+    "cleaningArgs": [["value"], []]
+  },
+  "coord": {
+    "cleaningFuncs": ["extract_json_fields", "drop_column"],
+    "cleaningArgs": [["value"], []]
+  },
+  "itemLabel": {
+    "cleaningFuncs": ["extract_json_fields", "drop_column"],
+    "cleaningArgs": [["value"], []]
+  },
+  "countryLabel": {
+    "cleaningFuncs": ["drop_column"],
+    "cleaningArgs": [[]]
+  },
+  "station_id": {
+    "cleaningFuncs": ["extract_json_fields", "drop_column"],
+    "cleaningArgs": [["value"], []]
+  }
+}
