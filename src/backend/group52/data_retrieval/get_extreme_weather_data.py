@@ -46,7 +46,9 @@ def get_results(query: str) -> object:
         object: a python object representing the query results
     """
     # Create a new SPARQL client and set the query
-    user_agent = f"WDQS-example Python/{sys.version_info[0]}.{sys.version_info[1]}"
+    # user_agent = f"WDQS-example Python/{sys.version_info[0]}.{sys.version_info[1]}"
+    user_agent = "Group52WeatherApp/1.0 (https://github.com/sevenlyfoma/ClimaPedia; 7lyfoma@gmail.com) Python/3.11"
+
     sparql = SPARQLWrapper(ENDPOINT_URL, agent=user_agent)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
